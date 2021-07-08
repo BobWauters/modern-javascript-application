@@ -10,6 +10,7 @@ let thirdDay=document.querySelector('  #day-3-desc');
 let fourthDay=document.querySelector(' #day-4-desc');
 let fifthDay=document.querySelector('  #day-5-desc');
 
+
 //API TRY 2
 button.addEventListener('click', function (){
     fetch ('https://api.openweathermap.org/data/2.5/forecast?q=' + inputValue.value +'&units=metric&appid=4ce0604fe97650f47963ef28c9f566d5')
@@ -32,8 +33,11 @@ button.addEventListener('click', function (){
                thirdDay.innerHTML = getAllData(16);
                fourthDay.innerHTML = getAllData(24);
                fifthDay.innerHTML = getAllData(32);
+
         })
 
         .catch(err => {console.log(err)});
+
 })
+// error :/ but it initializes it and shows very briefly on screen tho / showInput()
 
